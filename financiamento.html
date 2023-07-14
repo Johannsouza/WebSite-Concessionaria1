@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="financiamento.css" rel="stylesheet" type="text/css"/>
+  <link rel="icon" href="Volante.jpg">
+</head>
+<body>
+  <div id="container">
+  <div id="header"></div>
+    <div id="content">
+      <a id="inicio" href="index.html">Inicio</a>
+      <a id="servico" href="servico.html">Serviços</a>
+      <a id="financiamento" href="financiamento.html">Financiamento</a>
+      <a href="cadastro.html" class="btn">Inscrever-se</a>
+  </div>
+    <br></br>
+  <div id="title">
+    <h2><center>Calculadora de Financiamento de Veículos</center></h2>
+  </div>
+  <div id="texto"
+    <h3><center>Vai financiar um veículo? Faça uma simulação e confira o total a ser pago, juros acumulados e o pagamento mensal estimado!</center></h3>
+  </div>
+  <div id="informacoes">
+    <label>Cálculos</label>
+    <p>Preço Inicial do Veículo:</p>
+    <p><input type='number' placeholder='R$0.00'id='preco'</p>
+    <p>Valor da Entrada:</p>
+    <p><input type='number' placeholder='R$0.00' id='entrada'</p>
+    <p>Taxa de Juros Mensais:</p>
+    <p><input type='number' placeholder='0.0' id='juros'</p>
+    <p>Tempo de Financiamento(Quantidade de Prestações em meses):</p>
+    <p><input type='number' placeholder='(ex:36)' id='prestacao'</p>
+    <br></br>
+    <p><button class="btn" onclick='calcular()'>Calcular</p>
+    <p><div id='resultado'></div></p>
+   </div>  
+    <div id="footer">
+      <h4>Cadastre-se para receber conteúdo exclusivo em seu Email</h4>
+    </div>
+  </div>
+    <script src='financiamento.js'></script>
+</body>
+</html>
