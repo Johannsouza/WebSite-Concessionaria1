@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  #container{
+    margin:0 auto;
+    height:100 vh;
+    width:100%
+  }
+  #header{
+    background-image:url("Logotipo.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:black;
+    background-size:150px;
+    height:200px; 
+  }
+  #content{
+    display:flex;
+    align-items:center;
+    background-image:linear-gradient(yellow,grey);
+    padding:12px 16px;
+    overflow:hidden;
+    text-align:center;
+    justify-content:center;
+  }
+  #content a{
+    display:inline-block;
+    padding:10px 25px;
+    list-style-type:none;
+    color:blue;;
+    text-decoration:none;
+    font-weight:bold;
+    text-transform:capitalize;
+  }
+  
+  #content a:hover{
+    color:white;
+    transform:scale(1.2);
+  }
+  .btn{
+    background-color:orangered;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    padding: 10px 25px;
+    border-radius:20 px;
+    transition:transform 2s;
+  }
+  .btn:hover{
+    transform:scale(1.2);
+  }
+  #principal{
+    position:absolute;
+    top:50%;
+    left:8%;
+  }
+  #nome1{
+    color:yellow;
+    letter-spacing:2px;
+    font-size:20px;
+  }
+  #nome2{
+    color:white;
+    margin:50px 0px 50px;
+    font-size:25px;
+  }
+  span{
+    color:yellow;
+  }
+  #nome3{
+    color:white;
+    font-size:15px;
+  }
+  #text{
+    border-radius:30px;
+  }
+  #senha{
+    border-radius:30px;
+  }
+  .botao{
+    position:absolute;
+    display:inline-block;
+    outline:none;
+    padding:12px 15px;
+    border-radius:20px;
+    background-color:orangered;
+    color:blue;
+    box-shadow:0px 0px 15px grey;
+    transition:transform 2s;
+  }
+  .botao:hover{
+    transform:scale(1.2)
+  }
+  
+  body{
+    background:url("carro2.webp");
+    background-size:cover;
+    background-position:right;
+    background-repeat:no-repeat;
+    transition:5s;
+    animation-name:animate;
+    animation-duration:30s;
+    animation-iteration-count:infinite;
+  }
+  @keyframes animate{
+    0%{
+      background:url("carro2.webp");
+      background-repeat:no-repeat;
+      background-size:cover;
+    }50%{
+      background:url("carro3.jpg");
+      background-repeat:no-repeat;
+      background-size:cover;
+    }100%{
+      background:url("carro4.jpg");
+      background-repeat:no-repeat;
+      background-size:cover;
+    }
+  }
